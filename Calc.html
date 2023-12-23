@@ -1,0 +1,85 @@
+<html>
+    <script src="js/funcao.js"></script>
+<head>
+    <link rel="stylesheet" href='.CSS/simple-grind.css'>
+
+    <link rel="stylesheet" href='.CSS/simple-grid.min.css'>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    
+    <meta charset="utf-8" />
+    <style>
+        input{
+
+            width: 50px;
+            height: 50px;
+background-color: blueviolet;
+color:white;
+        }
+        p{
+            width: 205px;   
+            height: 50px;
+            background-color: white;
+            font-size: 25px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        h1{
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body style="background: linear-gradient(to right, black, blue)">
+
+    <div class="container" style="margin-top: 16%; margin-left: 40%;">
+
+        <div class="row">
+            <div class="col-sm-2">
+               <table style="border: 10px solid; text-align: center; width: 150px; background-color: rgb(0, 151, 151); ">
+                    
+                   <h1 style="color:white">Matemaquina</h1>
+                    
+                    <tr>
+                        <td colspan="5"><p type="text" class="estilo" value="" id="visor" style="background-color: rgb(48, 136, 48); color:white;"></p></td>
+                    </tr>
+                    <tr>
+                    <td><input onclick="botao('tentei mas não deu')" type="button" class="estilo" value="1/x" id="d7" ></td>
+                        <td> <input onclick="botao('tentei mas não deu')" type="button" class="estilo" value="x²" id="d8"></td>
+                        <td> <input onclick="botao('tentei mas não deu')" type="button" class="estilo" value="v²x" id="d9"></td>
+                        <td> <input onclick="botao('/')" type="button" class="estilo" value="/" id="dx"></td>
+                    </tr>
+                    <tr style="margin-left: 5px;">
+                        <td><input onclick="botao('7')" type="button" class="estilo" value="7" id="d7" ></td>
+                        <td> <input onclick="botao('8')" type="button" class="estilo" value="8" id="d8"></td>
+                        <td> <input onclick="botao('9')" type="button" class="estilo" value="9" id="d9"></td>
+                        <td> <input onclick="botao('*')" type="button" class="estilo" value="X" id="dx"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <input onclick="botao('4')" type="button" class="estilo" value="4" id="d4"></td>
+                        <td> <input onclick="botao('5')" type="button" class="estilo" value="5" id="d5"></td>
+                        <td> <input onclick="botao('6')" type="button" class="estilo" value="6" id="d6"></td>
+                        <td> <input onclick="botao('-')" type="button" class="estilo" value="-" id="dmenos"></td>
+                    </tr>
+                    <tr>
+                        <td> <input onclick="botao('1')" type="button" class="estilo" value="1" id="d1"></td>
+                        <td> <input onclick="botao('2')" type="button" class="estilo" value="2" id="d2"></td>
+                        <td> <input onclick="botao('3')" type="button" class="estilo" value="3" id="d3"></td>
+                        <td> <input onclick="botao('+')" type="button" class="estilo" value="+" id="dmais"></td>
+                    </tr>
+                    <tr>
+                        <td><input onclick="botao('0')" type="button" class="estilo" value="0" id="d0"> </td>
+                        <td><input onclick="reseta()" type="button" class="estilo" value="⌫" id="dapag"></td>
+                        <td><input onclick="botao('.')" type="button" class="estilo" value="," id="dbarra"></td>
+                        <td rowspan="2"><input onclick="calculo()" type="button" class="estilo" value="=" style="height: 70px;" id="digual"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

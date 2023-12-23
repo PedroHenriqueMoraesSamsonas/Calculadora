@@ -1,0 +1,18 @@
+	// Calculadora Modo 1
+	
+	function botao(num) {
+    
+		valor = document.getElementById('visor').value += num;
+		document.getElementById('visor').value = valor;
+	}
+	
+	function reseta(){
+		
+		document.getElementById('visor').value ="";
+	}
+
+	function calculo() {
+		
+		resultado = eval(valor);
+		document.getElementById('visor').value = resultado.toLocaleString("pt-BR");
+	}
